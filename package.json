@@ -1,0 +1,12 @@
+{
+  "name": "global-storage-example",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:debug": "DEBUG=global-storage* npx playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.54.1",
+    "@vitalets/global-storage": "^0.1.0"
+  }
+}
