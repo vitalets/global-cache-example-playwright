@@ -1,12 +1,12 @@
 {
-  "name": "global-storage-example",
+  "name": "global-cache-example-playwright",
   "version": "1.0.0",
   "scripts": {
     "test": "npx playwright test",
-    "test:debug": "DEBUG=global-storage* npx playwright test"
+    "test:debug": "DEBUG=global-cache* npm t"
   },
   "devDependencies": {
     "@playwright/test": "^1.54.1",
-    "@vitalets/global-storage": "^0.1.0"
+    "@vitalets/global-cache": "^0.1.2"
   }
 }
