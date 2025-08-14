@@ -7,6 +7,7 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.54.1",
+    "@types/node": "^24.2.1",
     "@vitalets/global-cache": "^0.1.2"
   }
 }
