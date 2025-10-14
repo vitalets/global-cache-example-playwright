@@ -6,8 +6,8 @@
     "test:debug": "DEBUG=global-cache* npm t"
   },
   "devDependencies": {
+    "@global-cache/playwright": "^0.2.4",
     "@playwright/test": "^1.54.1",
-    "@types/node": "^24.2.1",
-    "@vitalets/global-cache": "^0.1.2"
+    "@types/node": "^24.2.1"
   }
 }

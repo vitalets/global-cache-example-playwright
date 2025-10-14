@@ -1,12 +1,14 @@
-# Global cache example with Playwright
+# Global Cache example with Playwright
 
-An fully working example of using [@vitalets/global-cache]() with [Playwright]().
+An example of using [@global-cache/playwright](https://github.com/vitalets/global-cache) for cached authentication in the Playwright tests.
 
-This approach is more efficient than the [separate auth project](https://playwright.dev/docs/auth#basic-shared-account-in-all-tests), because authentication preformed only when needed and doesn't require an additional project.
+This approach is more efficient than the [dependency project](https://playwright.dev/docs/auth#basic-shared-account-in-all-tests), because authentication is performed on-demand and doesn't require extra project in your config.
 
 ## Details
-- `auth.spec.ts` runs tests for authenticated user, and `no-auth.spec.ts` for non-authenticated.
-- `fixtures.ts` overwrites `storageState` fixture to lazily perform authetication if the current test does not marked with `@no-auth` tag. Auth state is persisted in the `.global-cache` dir for 5 minutes.
+- `test/auth.spec.ts` - tests for authenticated page
+- `test/no-auth.spec.ts` - tests for non-authenticated page
+- `test/helpers/fixtures.ts` - overwrites `storageState` fixture to lazily perform authetication
+- `test/helpers/auth.ts` - authentication helper
 
 ## Running all tests
 When running all tests with 2 workers, authentication performed only in one worker (where it's really needed):
