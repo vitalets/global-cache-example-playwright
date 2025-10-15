@@ -6,8 +6,9 @@
     "test:debug": "DEBUG=global-cache* npm t"
   },
   "devDependencies": {
-    "@global-cache/playwright": "^0.2.16",
+    "@global-cache/playwright": "^0.3.1",
     "@playwright/test": "^1.56.0",
-    "@types/node": "^24.2.1"
+    "@types/node": "^24.2.1",
+    "typescript": "^5.9.3"
   }
 }
